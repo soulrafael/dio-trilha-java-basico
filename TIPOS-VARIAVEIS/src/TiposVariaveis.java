@@ -10,7 +10,7 @@ public class TiposVariaveis {
         long cep= 64000000L;
         char letraInicial ='a';
 
-        System.out.println(idade+letraInicial);
+        System.out.println(idade+letraInicial);//
 
         
     }
