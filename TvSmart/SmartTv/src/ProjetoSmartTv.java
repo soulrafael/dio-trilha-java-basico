@@ -1,7 +1,6 @@
 
 
 import java.util.Scanner;//
-
 import SmartTV.SmartTV;
 
 public class ProjetoSmartTv {
