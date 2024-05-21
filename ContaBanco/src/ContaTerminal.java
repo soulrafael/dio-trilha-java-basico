@@ -13,10 +13,10 @@ public class ContaTerminal {
         String usuarioConta;
         int numeroConta;
         double saldoConta=2400.50;
-            System.out.println("Seja Bem Vindo ao BANKT");
+            System.out.println("Seja Bem Vindo ao ContaTerminal");
                 System.out.println("Antes de inicia, Precisamos de algumas informações");
                 System.out.println("Informe Seu nome de usuario");
-                usuarioConta = entrada.next();
+                usuarioConta = entrada.nextLine();
                     System.out.println("Informe o numero da sua agencia");
                         agencia=entrada.next();
                         System.out.println("Informe o numero da sua conta");
