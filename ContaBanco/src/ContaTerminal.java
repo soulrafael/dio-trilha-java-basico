@@ -2,11 +2,13 @@ import java.util.Scanner;
 
 public class ContaTerminal {
     public static void main(String[] args)  {
-       /* System.out.println("Hello, World! Bem Vindo ao BANKT");
-        String agencia = args[0];
-        String usuarioConta = args[2];
-        String numeroConta = args[2];*/
-        Scanner entrad = new Scanner(System.in);
+       /** TODO:
+           1 Conhecer e importar a classe Scanner;
+           2 Exibir mensagem para o Usuario;
+           3 obter pela Scanner resultados obtidos pelo terminal;
+           4 Exibir mensagem ao Usuario.
+       */
+        Scanner entrada = new Scanner(System.in);
         String agencia;
         String usuarioConta;
         int numeroConta;
@@ -14,36 +16,18 @@ public class ContaTerminal {
             System.out.println("Seja Bem Vindo ao BANKT");
                 System.out.println("Antes de inicia, Precisamos de algumas informações");
                 System.out.println("Informe Seu nome de usuario");
-                usuarioConta = entrad.next();
+                usuarioConta = entrada.next();
                     System.out.println("Informe o numero da sua agencia");
-                        agencia=entrad.next();
+                        agencia=entrada.next();
                         System.out.println("Informe o numero da sua conta");
-                        numeroConta=entrad.nextInt();
-                        System.out.println(".>");
-                        System.out.println(".>");
-                        System.out.println(".>");
-                        System.out.println(".>");
-                        System.out.println(".>");
-                        System.out.println(".>");
-                        System.out.println(".>");
-                        System.out.println(".>");
-                        System.out.println(".>");
-                        System.out.println(".>");
-                        System.out.println(".>");
-                        System.out.println(".>");
-                        System.out.println(".>");
-                        System.out.println("--------------------");
-
-
+                        numeroConta=entrada.nextInt();
                  
     System.out.println("Seja bem vindo! ");
     System.out.println("--------------------");
-    System.out.println("--------------------");
-
-    System.out.println(usuarioConta);
-    System.out.println(numeroConta);
-    System.out.println(agencia);
-    System.out.println(saldoConta);
+    System.out.println("Usuario: "+usuarioConta);
+    System.out.println("Nº Conta: "+numeroConta);
+    System.out.println("Agencia: "+agencia);
+    System.out.println("Saldo Atual:"+saldoConta);
     System.out.println("------------------------");
     System.out.println("-------------------- ---");
 
