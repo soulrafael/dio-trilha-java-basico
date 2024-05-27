@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import excecoes.PrimeiroParametroexcecao;
 public class Contador {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
@@ -8,21 +8,24 @@ public class Contador {
         int parametro2 = entrada.nextInt();
         try {
             //chamando metodo contando a logica de contagem 
-            for(int x=parametro1; x>2;x=x-parametro2){
             contar(parametro1, parametro2);
-        }
-        } catch (Exception e) {
-            // TODO: handle exception
+        
+        } catch ( PrimeiroParametroexcecao e) {
             //imprimir a mensagem o primeiro parametro deve ser maior
+            System.out.println("tente novamente");
+            entrada.close();
         }
         
     
     
     }
-    static void contar(int parametro1, int parametro2){
+    static void contar(int parametro1, int parametro2) throws PrimeiroParametroexcecao{
         //validar se parametros é MAIOR que parametro2 e lançar exceção 
-        System.out.println(" o valor "+parametro1);
-            System.out.println("O valor do parametro 2 "+parametro2);
+    if (parametro1>parametro2) {
+        throw new PrimeiroParametroexcecao("mensagem ");
+    }
+        System.out.println(" o valor do primeiro parametro  "+parametro1);
+            System.out.println("O valor do segundo parametro  "+parametro2);
 
         //realizar o for para imprimir os numeros com base na variavel contagem
 
