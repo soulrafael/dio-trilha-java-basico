@@ -16,7 +16,7 @@ public class Contador {
             entrada.close();
         }
     }
-    static void contar(int parametro1, int parametro2) throws ParametroInvalidosException{
+    static void contar(int parametro1, int parametro2) throwParametroInvalidosException{
         //validar se parametros é MAIOR que parametro2 e lançar exceção 
     if (parametro1>parametro2) {
         throw new ParametroInvalidosException("mensagem ");
