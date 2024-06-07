@@ -1,14 +1,28 @@
 
 package Servicos;
-import ServicoTelefone.Telefone;
+import Navegador.Navegador;
+import ReprodutorMusical.ReprodutorMusical;
+import Telefone.Telefone;
 
-public class Servicos implements Telefone {
-public static void ligar(){
+public class Servicos implements Telefone, Navegador, ReprodutorMusical{
+//implementando TELEFONE,NAVEGADOR,REPRODUTOR MUSICAL
+//aplicação de conceito de interface - basico
+private String teste = "Sucess!!"; //Conceito de encapsulamento utilizando private
 
+public void ligar(){
+System.out.println("REALIZANDO LIGAÇÃO");
+System.out.println(teste);
 }
-
-public void Musica() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'Musica'");
+public void desligar(){
+System.out.println("Desligando ligação");
+System.out.println(teste);
+}
+public void browser(){
+    System.out.println("Navegando na Internet");
+    System.out.println(teste);
+}
+public void tocarMusica(){
+    System.out.println("Tocando Musica");
+    System.out.println(teste);
 }
 }
