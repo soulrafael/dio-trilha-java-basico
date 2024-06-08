@@ -1,5 +1,9 @@
 package ReprodutorMusical;
 
 public interface ReprodutorMusical {
-    public void tocarMusica();
+    //Métodos: tocar(), pausar(), selecionarMusica(String musica)
+
+    public void tocar();
+    public void pausar();
+    public String selecionarMusica(String musica);
 }

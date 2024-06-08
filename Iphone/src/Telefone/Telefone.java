@@ -1,8 +1,8 @@
 package Telefone;
 
 public interface Telefone {
-    public void ligar();
-    public void desligar();
-    
-    
+    //TODO:Métodos: ligar(String numero), atender(), iniciarCorreioVoz
+    public String ligar(String numero);
+    public void atender();
+    public void iniciarCorreioVoz();  
 }

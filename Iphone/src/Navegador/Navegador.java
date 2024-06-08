@@ -1,6 +1,10 @@
 package Navegador;
 
 public interface Navegador {
-    public void browser();
+   // Métodos: exibirPagina(String url), adicionarNovaAba(), atualizarPagina()
+
+    public String exibirPagina(String url);
+    public void adicionarNovaAba();
+    public void atualizarPagina();
 
 }
