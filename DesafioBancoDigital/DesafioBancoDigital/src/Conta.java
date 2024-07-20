@@ -29,11 +29,14 @@ public void transferir(double valor, Iconta contaDestino) {
 this.sacar(valor);;  
 contaDestino.depositar(valor);
 }
+
 protected void imprimirInfosComuns() {
+    System.out.println("--------EXTRATO--------");
     System.out.println(String.format("Titular: %s", this.cliente.getNome()));
     System.out.println(String.format("Agencia: %d", this.agencia));
     System.out.println(String.format("Numero: %d", this.numeroConta));
     System.out.println(String.format("Saldo: %.2f", this.saldo));
+    
 }
 
 
